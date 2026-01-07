@@ -1,0 +1,12 @@
+#default arguments = a default value for certaiun parameter
+# default is used when that argument is omitted
+# make your functions more flexible, reduces # of arguments
+# 1. positional, 2> defaulr , 3. keyword , 4. arbitrary
+
+
+
+def net_price(list_price , discount= 0 , taxs= 0.05):
+    return list_price * (1 - discount) * (1 + taxs)
+
+#print(net_price(500))
+print(net_price(500 , 0.1, 0))
